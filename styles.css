@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width:100%;
+    height: 500px;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.rosarivo-regular-italic {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+/* Header Bar */
+header{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: #fff;
+}
+
+header h1{
+    font-size: 50px;
+    font-family: rosarivo;
+}
+
+header nav li{
+    display:inline;
+}
+
+header a{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: rgb(255, 221, 0);
+}
+
+/* About style */
+.about-list{
+    display: flex ;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.about-text {
+    flex:300px;
+    text-align: center;  
+    line-height: 25px;
+    display: block;
+    margin-block:70px;
+    margin-inline: 50px;
+}
+
+.about-text p{
+    font-style: italic;
+    font-size: 17px;
+}
+
+.about-pic{
+    flex:100px;
+    margin-left:80px;
+    margin-block: 50px;
+    display: block;
+}
+
+.about-pic img{
+    width:500px;
+    height: auto;
+    border: 5px solid black;
+}
+
+@media  screen and (max-width:1170px) {
+    .about-text{
+        margin: 30px;
+        line-height: 20px;
+    }
+    .about-text p {  
+        font-size: 1.0vh;
+    }
+    .about-pic img{
+        width:80%;
+        height: auto;
+    }
+}
+
+/* Menu styles */
+.list{
+    display: flex ;
+    justify-content: space-around;
+}
+
+.menu {
+    background:rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+    color:white;
+    line-height: 40px;
+}
+
+.menu img {
+    width: 250px;
+    height: 250px; 
+    border: 7px solid white;   
+    border-radius: 50%;
+}
+
+/*Gallery styles*/
+.gallist{
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallist h2{
+    text-align: center;
+}
+
+.galgrid{
+    background-color: black;
+    padding-top:4px ;
+}
+
+.galgrid img {
+    width: 250px;
+    height: 250px;
+    border-inline:  4px solid black;
+} 
+
+
+  /* Responsive layout for image grid */
+  @media screen and (max-width:775px) {
+    .gallist {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+
+/* Location styles */
+table{
+    background-color: white;
+    color: black;
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 30px;  
+}
+
+td{
+    padding: 20px ; 
+}
+
+/* Timing styles */
+.time table{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    margin-left: auto; 
+    margin-right: auto;
+    line-height: 40px;
+    font-size: 19px;
+}
+
+/* Contact styles */
+.contacts table{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        margin-left: auto; 
+        margin-right: auto;
+        font-size: 20px;
+        line-height: 30px;  
+}
+
+input, textarea {
+    width:300px;
+    height: 30px;
+    text-align: center;
+}
+
+/* Button styles */
+button{
+    background-color: white;
+    color: black;
+    margin:10px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+button:hover{
+    background-color:  rgb(255, 221, 0);
+}
+
+.home-button {
+    bottom: 5%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    margin:10px;
+  }
+
+.home-button img{
+    width: 35px;
+    height:35px;
+    padding-top: 5px;
+    padding-inline: 5px;
+}
+
+/* Footer styles */
+footer {
+    background:rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
